@@ -1,2 +1,9 @@
-<p>listing-page works!</p>
-<!-- with * is structural directives -->
+<!-- <p>listing-page works!</p> -->
+<div>
+  <!-- with * is structural directives -->
+  <div class="content-box" *ngFor="let listing of listings">
+    <a routerLink="/listings/{{ listing.id }}">
+      <h3>{{ listing.name }} - ${{ listing.price }}</h3>
+    </a>
+  </div>
+</div>

@@ -3,7 +3,7 @@ import { Listing } from '../types';
 import { fakeListings } from '../fake-data';
 
 @Component({
-  selector: 'app-listing-page',
+  selector: 'app-listings-page',
   templateUrl: './listing-page.component.html',
   styleUrls: ['./listing-page.component.css'],
 })

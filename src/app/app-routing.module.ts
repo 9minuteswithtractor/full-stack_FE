@@ -1,11 +1,20 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-// here we need to import ListingPage obj
-import { ListingPageComponent } from './listing-page/listing-page.component';
+import { Routes, RouterModule } from '@angular/router';
+import { ListingsPageComponent } from './listing-page/listing-page.component';
+import { ListingDetailPageComponent } from './listing-detail-page/listing-detail-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { EditListingPageComponent } from './edit-listing-page/edit-listing-page.component';
+import { MyListingsPageComponent } from './my-listings-page/my-listings-page.component';
+import { NewListingPageComponent } from './new-listing-page/new-listing-page.component';
 
-// use this to implement routing
 const routes: Routes = [
-  { path: 'listings', component: ListingPageComponent, pathMatch: 'full' },
+  { path: '', redirectTo: '/listings', pathMatch: 'full' },
+  { path: 'listings', component: ListingsPageComponent, pathMatch: 'full' },
+  { path: 'listings/:id', component: ListingDetailPageComponent },
+  { path: 'contact/:id', component: ContactPageComponent },
+  { path: 'edit-listing/:id', component: EditListingPageComponent },
+  { path: 'my-listings', component: MyListingsPageComponent },
+  { path: 'new-listing', component: NewListingPageComponent },
 ];
 
 @NgModule({

@@ -10,11 +10,11 @@ import { NewListingPageComponent } from './new-listing-page/new-listing-page.com
 
 // use this to implement routing
 const routes: Routes = [
-  { path: '', redirectTo: '/listings', pathMatch: 'full' },
+  { path: '', redirectTo: '/listings', pathMatch: 'full' }, // for the home page
   { path: 'listings', component: ListingPageComponent, pathMatch: 'full' },
   { path: 'listings/:id', component: ListingDetailPageComponent }, // : means url parameter
   { path: 'contact/:id', component: ContactPageComponent },
-  { path: 'edit-listing:id', component: EditListingPageComponent },
+  { path: 'edit-listing/:id', component: EditListingPageComponent },
   { path: 'my-listings', component: MyListingsPageComponent },
   { path: 'new-listing', component: NewListingPageComponent },
 ];

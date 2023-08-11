@@ -3,21 +3,22 @@ import { Listing } from './types';
 export const fakeListings: Listing[] = [
   {
     id: '123',
-    name: 'Vintage DIY lamp',
-    description: 'A unique handmade table-lamp. Bargain price',
-    price: 80,
+    name: 'Vintage copper-cattle table lamp ',
+    description: 'A unique handmade table-lamp.',
+    //image: 'http://amazing-lamp.png',
+    price: 45,
   },
   {
     id: '345',
-    name: 'Freestyle-Skis',
-    description: 'From the 1990s, a collectors-item!',
-    price: 250,
+    name: 'Unique retro-camera table lamp',
+    description: 'Vintage - a collectors item!',
+    price: 50,
   },
   {
     id: '456',
-    name: 'Table-Tennis',
-    description: 'Good condition, free delivery',
-    price: 150,
+    name: 'Fun and creative fishing-pole ceiling lamp',
+    description: 'Unique decor for unique home!',
+    price: 75,
   },
 ];
 

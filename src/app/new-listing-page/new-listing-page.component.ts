@@ -19,7 +19,7 @@ export class NewListingPageComponent implements OnInit {
 
   // TODO  add to local array[] ?
   onSubmit(): void {
-    alert('Creating a new ad ...');
+    alert('Creating new ad ...');
     this.router.navigateByUrl('/my-listings');
   }
 }

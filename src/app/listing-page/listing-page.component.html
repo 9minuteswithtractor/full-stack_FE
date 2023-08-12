@@ -3,7 +3,9 @@
   <!-- with * is structural directives -->
   <div class="content-box" *ngFor="let listing of listings">
     <a routerLink="/listings/{{ listing.id }}">
-      <h3>{{ listing.name }} - {{ listing.price }} EUR [ .IMG ]</h3>
+      <h3>
+        {{ listing.name }} <code><em>[ .IMG ]</em></code>
+      </h3>
     </a>
   </div>
 </div>

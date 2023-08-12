@@ -5,4 +5,4 @@
     ( FrontEnd part with basic, functional UI )
 
     FE - Angular
-    BE - Node.js
+    BE - Node.js ( upcoming project )

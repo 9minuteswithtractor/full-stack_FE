@@ -5,7 +5,6 @@ export const fakeListings: Listing[] = [
     id: '123',
     name: 'Vintage copper-cattle table lamp ',
     description: 'A unique handmade table-lamp.',
-    //image: 'http://amazing-lamp.png',
     price: 45,
   },
   {
@@ -24,22 +23,28 @@ export const fakeListings: Listing[] = [
 
 export const fakeMyListings: Listing[] = [
   {
-    id: '789',
+    id: '199',
+    name: 'Apple MacBook Air, Retina M2 ',
+    description: '8GB 512GB SSD, EN, Space Gray ',
+    price: 950,
+  },
+
+  {
+    id: '319',
+    name: 'Apple iPhone 13 Pro Max',
+    description: '128GB, Green',
+    price: 650,
+  },
+  {
+    id: '152',
+    name: 'Playstation 5',
+    description: 'Engaging and super-fun gaming-console.',
+    price: 375,
+  },
+  {
+    id: '549',
     name: "KTM Twins 'Ultimate' KTM 690 ",
-    description: 'Adventure Build, super comfortable, reliable and very fast',
+    description: 'Adventure Build, super comfortable, reliable and very fast.',
     price: 4500,
-  },
-  {
-    id: '234',
-    name: 'Electric Guitar',
-    description: 'Needs new strings, but otherwise in very good condition',
-    price: 180,
-  },
-  {
-    id: '987',
-    name: 'Playstation',
-    description:
-      'Playstation 2, working condition, selling with some games following with',
-    price: 99,
   },
 ];

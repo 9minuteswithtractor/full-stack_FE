@@ -12,7 +12,7 @@ export class EditListingPageComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(): void {
-    alert('Saving changes to the ad ...');
+    alert('Saving changes ...');
     this.router.navigateByUrl('/my-listings');
   }
 }

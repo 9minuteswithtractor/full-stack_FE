@@ -3,7 +3,7 @@ import { Listing } from './types';
 export const fakeListings: Listing[] = [
   {
     id: '123',
-    name: 'Vintage copper-cattle table lamp ',
+    name: 'Vintage copper-kattle table lamp ',
     description: 'A unique handmade table-lamp.',
     price: 45,
   },

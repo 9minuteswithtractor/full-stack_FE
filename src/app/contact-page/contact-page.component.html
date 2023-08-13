@@ -1,23 +1,25 @@
 <!-- <p>contact-page works!</p> -->
-<div class="content-box">
-  <a routerLink="/listings"> <button>Home</button> </a>
+<div class="container">
+  <div class="content-box">
+    <a routerLink="/listings"> <button>Home</button> </a>
 
-  <!-- MAYBE need to find better way to redirect back???? routerLink="/listings/{{ listing?.id }} -->
-  <button (click)="goBack()">Back</button>
-  <h3>Contact seller:</h3>
-  <div>
-    <label>
-      <code>Your email: </code>
-      <!-- Two way binding for the email -->
-      <input name="email" [(ngModel)]="email" required="true" />
-    </label>
+    <!-- MAYBE need to find better way to redirect back???? routerLink="/listings/{{ listing?.id }} -->
+    <button (click)="goBack()">Back</button>
+    <h3>Contact seller:</h3>
+    <div>
+      <label>
+        <code>Your email: </code>
+        <!-- Two way binding for the email -->
+        <input name="email" [(ngModel)]="email" required="true" />
+      </label>
+    </div>
+    <div>
+      <label>
+        <code>Your message: </code>
+        <textarea name="message" cols="70" rows="5" [(ngModel)]="message">
+        </textarea>
+      </label>
+    </div>
+    <button (click)="sendMessage()">Send!</button>
   </div>
-  <div>
-    <label>
-      <code>Your message: </code>
-      <textarea name="message" cols="20" rows="5" [(ngModel)]="message">
-      </textarea>
-    </label>
-  </div>
-  <button (click)="sendMessage()">Send!</button>
 </div>

@@ -1,18 +1,19 @@
 <!-- <p>listing-detail-page works!</p> -->
-
-<div class="content-box">
-  <a routerLink="/listings">
-    <button>Back</button>
-  </a>
-  <h2>{{ listing?.name }}</h2>
-  <!-- just an image placeholder for now... -->
-  <h3>
-    <code><em>[ .IMG ]</em></code>
-  </h3>
-  <p>{{ listing?.description }}</p>
-  <p>{{ listing?.price }} EUR</p>
-  <a routerLink="/contact/{{ listing?.id }}">
-    <!-- contact_seller button -->
-    <button>I'm interested!</button>
-  </a>
+<div class="container">
+  <div class="content-box">
+    <a routerLink="/listings">
+      <button>Back</button>
+    </a>
+    <h2>{{ listing?.name }}</h2>
+    <!-- just an image placeholder for now... -->
+    <h3>
+      <code><em>[ .IMG ]</em></code>
+    </h3>
+    <p>{{ listing?.description }}</p>
+    <p>{{ listing?.price }} EUR</p>
+    <a routerLink="/contact/{{ listing?.id }}">
+      <!-- contact_seller button -->
+      <button>I'm interested!</button>
+    </a>
+  </div>
 </div>

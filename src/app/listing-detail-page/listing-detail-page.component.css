@@ -1,0 +1,18 @@
+/* body {
+  align-items: center;
+} */
+.container {
+  display: grid;
+
+  margin: 0 auto;
+  width: fit-content;
+  grid-template-columns: 100%;
+}
+
+.content-box {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  max-width: max-content;
+  /* width: fit-content; */
+}

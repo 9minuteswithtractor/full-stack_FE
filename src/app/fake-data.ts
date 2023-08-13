@@ -3,9 +3,15 @@ import { Listing } from './types';
 export const fakeListings: Listing[] = [
   {
     id: '123',
-    name: 'Vintage copper-kattle table lamp ',
+    name: 'Vintage copper-kettle table lamp ',
     description: 'A unique handmade table-lamp.',
-    price: 45,
+    price: 55,
+  },
+  {
+    id: '445',
+    name: 'Sunbathing chair (set of two)',
+    description: 'Very comfortable, gray color ..',
+    price: 40,
   },
   {
     id: '345',
@@ -14,37 +20,45 @@ export const fakeListings: Listing[] = [
     price: 50,
   },
   {
+    id: '721',
+    name: 'Stand-up Paddle Board',
+    description:
+      'Fun and active summer activity! Included: Board, Paddle, Pump and Bag ',
+    price: 50,
+  },
+  {
     id: '456',
     name: 'Fun and creative fishing-pole ceiling lamp',
     description: 'Unique decor for unique home!',
     price: 75,
   },
+  {
+    id: '125',
+    name: 'Mountain Bike',
+    description: 'Medium size, 21 gear, Black color, good condition!',
+    price: 120,
+  },
 ];
 
 export const fakeMyListings: Listing[] = [
   {
-    id: '199',
-    name: 'Apple MacBook Air, Retina M2 ',
-    description: '8GB 512GB SSD, EN, Space Gray ',
-    price: 950,
+    id: '123',
+    name: 'Vintage copper-kettle table lamp ',
+    description: 'A unique handmade table-lamp.',
+    price: 55,
   },
 
   {
-    id: '319',
-    name: 'Apple iPhone 13 Pro Max',
-    description: '128GB, Green',
-    price: 650,
+    id: '456',
+    name: 'Fun and creative fishing-pole ceiling lamp',
+    description: 'Unique decor for unique home!',
+    price: 75,
   },
+
   {
-    id: '152',
-    name: 'Playstation 5',
-    description: 'Engaging and super-fun gaming-console.',
-    price: 375,
-  },
-  {
-    id: '549',
-    name: "KTM Twins 'Ultimate' KTM 690 ",
-    description: 'Adventure Build, super comfortable, reliable and very fast.',
-    price: 4500,
+    id: '345',
+    name: 'Unique retro-camera table lamp',
+    description: 'Vintage - a collectors item!',
+    price: 50,
   },
 ];

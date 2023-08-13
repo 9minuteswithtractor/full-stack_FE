@@ -1,8 +1,12 @@
 <div class="content-box">
   <h2>Edit Ad:</h2>
 
+  <!-- // DUNNO => displaying text as current text before editing? -->
   <app-listing-data-form
     buttonText="Save Changes"
+    [currentName]="listing?.name"
+    [currentDescription]="listing?.description"
+    [currentPrice]="listing?.price"
     (onSubmit)="onSubmit()"
   ></app-listing-data-form>
 </div>

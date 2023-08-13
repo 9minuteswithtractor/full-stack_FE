@@ -12,6 +12,10 @@ import { Listing } from '../types';
 export class ListingDataFormComponent implements OnInit {
   // DUNNO => understand @Input
   @Input() buttonText: any;
+  @Input() currentName: any;
+  @Input() currentDescription: any;
+  @Input() currentPrice: any;
+
   name: string = '';
   description: string = '';
   price: string = '';
@@ -20,7 +24,11 @@ export class ListingDataFormComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.name = this.currentName;
+    this.description = this.currentDescription;
+    this.price = this.currentPrice;
+  }
 
   // DUNNO =>  how to add to local array[] (fake-data.ts) ?
   onButtonClicked(): void {

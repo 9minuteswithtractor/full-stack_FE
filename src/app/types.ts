@@ -4,5 +4,6 @@ export interface Listing {
   name: string;
   description: string;
   price: number;
+  views: number;
   // image: string as src=""  ?
 }

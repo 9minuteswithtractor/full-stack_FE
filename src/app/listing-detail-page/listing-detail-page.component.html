@@ -1,6 +1,7 @@
 <!-- <p>listing-detail-page works!</p> -->
 <div class="container">
-  <div class="content-box">
+  <div class="content-box" *ngIf="!isLoading">
+    <p>This ad was viewed {{ listing?.views }} times.</p>
     <a routerLink="/listings">
       <button>Back</button>
     </a>
@@ -16,4 +17,7 @@
       <button>I'm interested!</button>
     </a>
   </div>
+</div>
+<div class="content-box" *ngIf="isLoading">
+  <h3>loading ...</h3>
 </div>

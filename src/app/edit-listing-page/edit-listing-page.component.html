@@ -1,12 +1,15 @@
-<div class="content-box">
+<div class="content-box" *ngIf="listing">
   <h2>Edit Ad:</h2>
 
   <!-- // DUNNO => displaying text as current text before editing? -->
   <app-listing-data-form
     buttonText="Save Changes"
-    [currentName]="listing?.name"
-    [currentDescription]="listing?.description"
-    [currentPrice]="listing?.price"
-    (onSubmit)="onSubmit()"
+    [currentName]="listing.name"
+    [currentDescription]="listing.description"
+    [currentPrice]="listing.price"
+    (onSubmit)="onSubmit($event)"
   ></app-listing-data-form>
+</div>
+<div class="content-box" *ngIf="!listing">
+  <h3>Loading...</h3>
 </div>

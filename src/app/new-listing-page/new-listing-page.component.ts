@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'; // for navigations
 import { Listing } from '../types';
-import { fakeMyListings } from '../fake-data';
+import { ListingsService } from '../listings.service';
 
 @Component({
   selector: 'app-new-listing-page',
@@ -9,13 +9,28 @@ import { fakeMyListings } from '../fake-data';
   styleUrls: ['./new-listing-page.component.css'],
 })
 export class NewListingPageComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private listingsService: ListingsService
+  ) {}
 
   ngOnInit(): void {}
 
   // TODO  add to local array[] ?
-  onSubmit(): void {
+  onSubmit({
+    name,
+    description,
+    price,
+  }: {
+    name: string;
+    description: string;
+    price: number;
+  }): void {
     alert('Creating new ad ...');
-    this.router.navigateByUrl('/my-listings');
+    this.listingsService
+      .createNewListing(name, description, price)
+      .subscribe(() => {
+        this.router.navigateByUrl('/my-listings');
+      });
   }
 }
